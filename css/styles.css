@@ -1,0 +1,588 @@
+/*
+Colors
+#8A00D4
+#D527B7
+#FF82C3
+#FFC46B
+#0CECDD
+49FF00
+Fonts
+font-family: 'Dongle', sans-serif;
+font-family: 'Hurricane', cursive;
+font-family: 'Inspiration', cursive;
+font-family: 'Kodchasan', sans-serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Righteous', cursive;
+*/
+
+:root{
+    --violet:#8A00D4;
+    --light-violet:#a71af3;
+    --dark-violet:#620396;
+    --dark-pink:#D527B7;
+    --light-pink:#FF82C3;
+    --pink:#bd0c9f;
+    --yellow:#FFC46B;
+    --turquise:#0CECDD;
+    --blue:#0b0231;
+    --green:#3ca313;
+    --dapop:#ffcb3e;
+    --pink21:#ff44ab;
+    --tejar:#e2e2e2;
+}
+
+body {
+
+    /*----Position----*/
+    margin: 2%;
+    width: 95%;
+    height: 95%;
+
+    /*----Styles----*/
+
+    background: url("../img/cheers-neon-light-on-the-wall-free-video.jpg");
+    border: 5px solid var(--turquise);
+    box-shadow:
+    0 0 10px var(--turquise),
+    0 0 20px var(--turquise);
+    border-radius: 20px;
+}
+
+/*---------------Header; Logo-------------------*/
+
+/*.container{
+    display: flex;
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+    align-content:center;
+} 
+
+.logoContainer{
+
+    width: calc(100% - 900px);
+    height: 100px;
+    margin: 0;
+}*/
+
+.back{
+    border: 3px solid var(--yellow);
+    border-radius: 50%;
+    position:absolute;
+    top: 10%;
+    left:40%;
+    width: 180px;
+    height: 180px;
+    z-index: -1;
+    box-shadow:
+    0 0 10px var(--yellow),
+    0 0 20px var(--yellow);
+    filter:blur(.3em)
+}
+
+.icon .soul{
+    font-family: 'Inspiration', cursive;
+    position:absolute;
+    font-size: 200px;
+    top: 9%;
+    left:41%;
+    font-size: 150px;
+    color: var(--dark-pink);
+	text-shadow:
+    
+		0 0 5px rgb(248, 64, 217),
+		0 0 10px rgb(255, 88, 227),
+		0 0 20px rgb(255, 52, 221),
+		0 0 40px rgb(255, 51, 221),
+		0 0 80px rgb(255, 70, 224),
+		0 0 90px rgb(221, 79, 197),
+		0 0 100px rgb(221, 63, 195),
+		0 0 140px rgb(209, 56, 184),
+		0 0 180px rgb(213, 39, 183,1);
+}
+
+.icon .nails{
+    font-family:'Dongle', sans-serif;
+    position:absolute;
+    font-size: 38px;
+    top: 25%;
+    left:42%;
+    color: var(--turquise);
+	text-shadow:
+		0 0 5px rgba(12, 236, 221,1),
+		0 0 10px rgba(12, 236, 221,1),
+		0 0 20px rgba(12, 236, 221,1),
+		0 0 40px rgba(13, 216, 202,1),
+		0 0 80px rgba(13, 216, 202,1),
+		0 0 90px rgba(13, 216, 202,1),
+		0 0 100px rgba(13, 216, 202,1),
+		0 0 140px rgba(13, 216, 202,1),
+		0 0 180px rgb(13, 216, 202,1);
+}
+
+/*------------Cookies Advice-----------------*/
+
+.cookies-advice{
+    font-family:'Dongle', sans-serif ;
+    font-size: 40px;
+    display: none;
+    margin-top: 10%;
+    width: calc(100% - 40px);
+    max-width: 300px;
+    line-height: 90%;
+    text-align: center;
+    border-radius: 15px;
+    position: fixed;
+    left: 35%;
+    z-index: 100;
+    padding: 30px;
+    border: 8px solid var(--pink);
+    color: var(--pink);
+    text-shadow:
+    0 0 5px var(--pink),
+    0 0 10px var(--pink);
+    backdrop-filter:  blur(2px);
+    box-shadow:
+    0 0 5px var(--pink),
+    0 0 10px var(--pink),
+    0 0 15px var(--pink);
+
+  }
+
+.cookies-advice.active,
+.cookies-advice-background.active{
+    display: block;
+}
+
+.cookies-advice .cookies{
+
+    max-width: 100px;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+.cookies-advice .title,
+.cookies-advice .description{
+    margin-bottom: 15px;
+}
+
+.cookies-advice .cookies-button{
+    width: 100%;
+    border: none;
+    background: none;
+    color: var(--blue);
+    font-size: 35px;
+    font-family:'Dongle', sans-serif ;
+
+}
+
+.cookies-advice .cookies-button:hover{
+    width: 100%;
+    border: none;
+    color: var(--yellow);
+    text-shadow:
+    0 0 5px var(--yellow),
+    0 0 10px var(--yellow);
+    cursor: pointer;
+    transition: .2s;
+}
+
+.cookies-advice a{
+
+    text-decoration: none;
+    color: var(--blue);
+    font-size: 35px;
+    font-family:'Dongle', sans-serif ;
+    text-shadow: none;
+}
+
+.cookies-advice a:hover{
+
+    color: var(--yellow);
+    text-shadow:
+    0 0 5px var(--yellow),
+    0 0 10px var(--yellow);
+    cursor: pointer;
+    transition: .2s;
+}
+
+.cookies-advice-background{
+    display: none;
+    backdrop-filter:  blur(5px);
+    position: fixed;
+    z-index: 99;
+    width: 100vw;
+    height: 100vw;
+    top:0;
+    left: 0;
+}
+/*---------------Cookies Page-------------------*/
+
+.cookies-policies {
+    backdrop-filter:  blur(5px);
+    margin:5%;
+}
+
+.title-policies{
+    font-family: 'Hurricane', cursive;
+}
+
+.cookies-policies p{
+
+    padding: 2%;    
+    font-family: 'Dongle', sans-serif;
+    font-size: 25px;
+    line-height: 90%;
+    color: var(--blue);
+}
+
+/*---------------Header; Navigator-------------------*/
+
+.navigator ul{
+
+    display: flex;
+    width: 100%;
+    height: 350px;
+    /*margin-left: 15%;*/
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.navigator ul li{
+    list-style: none;
+    width: 300px;
+    height: 50px;
+}
+
+.navigator ul li a{
+    text-decoration: none;
+    font-family: 'Dongle', sans-serif;
+    font-size: 50px;
+    color:var(--blue);
+
+}
+
+.navigator ul li:hover a .icon{
+
+    transition: .1s;
+    color:var(--yellow);
+    text-shadow:
+    0 0 5px var(--yellow),
+    0 0 10px var(--yellow);
+
+}
+
+.navigator ul li:hover a .text{
+
+    transition: .1s;
+    color:var(--turquise);
+    text-shadow:
+    0 0 5px var(--turquise),
+    0 0 10px var(--turquise);
+
+}
+
+/*---------------Sends-------------------*/
+
+.sends-cards img{
+    width: 100px;
+    height: 100px;
+}
+
+.sends-cards ul{
+
+    display: flex;
+    height: 350px;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.sends-cards ul li{
+    list-style: none;
+    width: 400px;
+    height: 250px;
+    line-height: 90%;
+    text-align: center;
+    border:3px solid var(rgba(170, 170, 170, 0.212));
+    border-radius: 20px;
+    padding:2%;
+    backdrop-filter:  blur(5px);
+
+    text-decoration: none;
+    font-family: 'Dongle', sans-serif;
+    font-size: 30px;
+    color:var(--blue);
+}
+
+.sends-cards ul li:hover a .img{
+
+    transition: .1s;
+    color:var(--yellow);
+    text-shadow:
+    0 0 5px var(--yellow),
+    0 0 10px var(--yellow);
+
+}
+
+.sends-cards ul li:hover a .text-delivery{
+
+    transition: .1s;
+    color:var(--violet);
+    text-shadow:
+    0 0 5px var(--violet),
+    0 0 10px var(--violet);
+
+}
+
+.sends-cards ul li:hover a .text-vegan{
+
+    transition: .1s;
+    color:var(--green);
+    text-shadow:
+    0 0 5px var(--green),
+    0 0 10px var(--green);
+
+}
+
+.sends-cards ul li:hover a .text-pay{
+
+    transition: .1s;
+    color:var(--yellow);
+    text-shadow:
+    0 0 5px var(--yellow),
+    0 0 10px var(--yellow);
+
+}
+
+/*---------------Index; Carousel-------------------*/
+
+.mark-Container{
+    display:flex;
+    width:45%;
+    height: 500px;
+}
+
+.mark-Container ul{
+
+    padding: 5%;
+    padding-left: 20%;
+    text-align: center;
+}
+
+.mark-Container ul li {
+
+    height: 35%;
+    list-style: none;
+}
+
+.mark-Container ul li a{
+
+    font-size: 50px;
+    text-decoration: none;
+}
+
+.mark-Container ul li:hover a{
+    
+    cursor: pointer;
+    font-size: 60px;
+    transition: .3s;
+}
+
+.mark-Container ul li .dapop{
+    font-family: 'Righteous', cursive;
+    color:var(--dapop);
+    text-shadow:
+    0 0 5px var(--dapop),
+    0 0 10px var(--dapop);
+}
+
+.mark-Container ul li .pink21{
+    font-family: 'Kodchasan', sans-serif;
+    color:var(--pink21);
+    text-shadow:
+    0 0 5px var(--pink21),
+    0 0 10px var(--pink21);
+}
+
+.mark-Container ul li .tejar{
+    font-family: 'Pacifico', cursive; 
+    color:var(--tejar);  
+    text-shadow:
+    0 0 5px var(--tejar),
+    0 0 10px var(--tejar); 
+}
+
+/*.image-mark{
+    margin-top: 30%;
+}
+
+.image-mark img{
+    border: 10px solid rgb(150, 5, 5);
+    box-shadow:
+    0 0 5px rgb(150, 5, 5),
+    0 0 10px rgb(150, 5, 5);
+    width: 200px;
+    height: 350px;
+}
+
+/*---------------Contact; Cards -------------------*/
+
+.card-contact img{
+    width: 100px;
+    height: 100px;
+}
+
+.card-contact ul{
+
+    margin: 2.5%;
+    padding: 0;
+    display: flex;
+    color: var(--dark-pink);
+    height: 100px;
+    height: 500px;
+    font-size: 32px;
+    align-items: flex-end;
+    text-align: center;
+    justify-content: space-around;
+    font-family: 'Dongle', sans-serif;
+    
+}
+
+.card-contact ul li{
+    list-style: none;
+    line-height: 100%;
+    border:3px solid var(rgba(170, 170, 170, 0.212));
+    border-radius: 20px;
+    padding:2%;
+    backdrop-filter:  blur(5px);
+    width: 300px;
+    height: 400px;
+
+}
+
+.card-contact ul li a{
+    text-decoration: none;
+    font-size: 45px;
+    color:var(--blue);
+
+}
+
+.card-contact ul li:hover a{
+
+    transition: .1s;
+    color:var(--turquise);
+    text-shadow:
+    0 0 5px var(--turquise),
+    0 0 10px var(--turquise);
+
+}
+
+.card-contact ul li:hover a{
+
+    transition: .1s;
+    color:var(--turquise);
+    text-shadow:
+    0 0 5px var(--turquise),
+    0 0 10px var(--turquise);
+
+}
+
+.card-contact ul li:hover a{
+
+    transition: .1s;
+    color:var(--turquise);
+    text-shadow:
+    0 0 5px var(--turquise),
+    0 0 10px var(--turquise);
+    cursor: pointer;
+
+}
+
+/*-------------Catalogue Page-------------------*/
+
+.catalogo{
+    
+    display: flex;
+    width: 100%;
+    margin: 2%;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-family: 'Dongle', sans-serif;
+}
+
+h1{
+    font-family: 'Hurricane', cursive;
+}
+
+.catalogo-card{
+
+    backdrop-filter:  blur(5px);
+    margin:2%;
+    width: 65%;
+    border-radius: 15px;
+}
+
+.catalogo .img{
+    
+    margin: 3%;
+    width: 40%;
+    box-shadow: 10px 10px 40px var(--blue);
+    border: 3px solid var(--blue);
+    border-radius: 20px;
+} 
+
+.catalogo-description{
+
+    font-size: 30px;
+    position: absolute;
+    left: 52%;
+    top:2%;
+    width: 40%;
+}
+
+.add .add-button,
+.addListWish .addListWish-button{
+
+    font-family: 'Dongle', sans-serif;
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter:  blur(50px);
+    font-size: 30px;
+    color: var(--blue);
+    border:none;
+    border-radius: 5px;
+
+}
+
+.add .add-button:hover,
+.addListWish .addListWish-button:hover{
+
+    color: var(--turquise);
+    font-size: 35px;
+    text-shadow:
+    0 0 2px var(--turquise),
+    0 0 5px var(--turquise);
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+.add img,
+.addListWish img{
+    width:20px;
+}
+/*.neon {
+	color: #fff;
+	margin-top: 30%;
+	text-shadow:
+		0 0 5px rgba(0,178,255,1),
+		0 0 10px rgba(0,178,255,1),
+		0 0 20px rgba(0,178,255,1),
+		0 0 40px rgba(38,104,127,1),
+		0 0 80px rgba(38,104,127,1),
+		0 0 90px rgba(38,104,127,1),
+		0 0 100px rgba(38,104,127,1),
+		0 0 140px rgba(38,104,127,1),
+		0 0 180px rgba(38,104,127,1);
+}*/

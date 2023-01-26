@@ -1,9 +1,5 @@
-<html>
-<body>
-{% include header.html %}
-{% include sends.html %}
-<!--<?php include("./header.php")?>
-<?php include("./sends.php")?>-->
+<?php include("./header.php")?>
+<?php include("./sends.php")?>
     <main>
         <div class="general-Container">
             <div class="mark-Container">
